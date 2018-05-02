@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:text="Date:"
+                android:textSize="28sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"/>
+
+            <EditText
+                android:id="@+id/date_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:singleLine="true"
+                android:layout_gravity="right"
+                android:textSize="22sp"
+                android:inputType="none"
+                android:focusableInTouchMode="false" />
+
+        </TableRow>>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:text="Time:"
+                android:textSize="28sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0" />
+
+            <EditText
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:singleLine="true"
+                android:inputType="none"
+                android:focusableInTouchMode="false"
+                android:textSize="22sp" />
+
+        </TableRow>>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+            <TextView
+                android:text="Food:"
+                android:textSize="28sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"/>
+
+            <Spinner
+                android:id="@+id/food_spinner"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:textSize="22sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+            <EditText
+                android:id="@+id/food_text"
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:id="@+id/food_text_view"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="22sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+            <TextView
+                android:text="Diaper:"
+                android:textSize="28sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"/>
+
+            <Spinner
+                android:id="@+id/diaper_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:textSize="22sp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/add_button"
+                android:gravity="center"
+                android:text="Add"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
